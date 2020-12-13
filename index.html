@@ -199,16 +199,19 @@
             box.style.color = h + "px";
             // en caso quieran asomarse a la consola
 
+ var fanzine;
             // comenzamos con p5.js
             function setup() {
                 var canvas = createCanvas(w, h);
                 canvas.parent("#p5");
+                fanzine = loadImage('img/canvas_fanzine3.png');
             }
 
             function draw() {
                 background(200);
                 fill(0);
-                ellipse(mouseX, mouseY, 50, 50);
+                image(fanzine, 0, 0, w / 2, h / 2);
+                
             }
 
             function windowResized() {
