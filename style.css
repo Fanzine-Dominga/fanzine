@@ -29,8 +29,8 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 body{
     background:var(--segundocolor);
     color:var(--colorclaro);
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
 }
 
 a{
@@ -88,12 +88,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 } 
 
 strong{
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
