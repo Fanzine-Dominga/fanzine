@@ -61,7 +61,7 @@ De tal manera podría "fundirse" con el color de fondo, ofreciendo continuidad, 
 
 header{
     background-color:var(--segundocolor);
-    background-image:url('img/wireframe-aspect_ratio-1-1.png');
+    background-image:url('img/hh-04.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size:100% auto;
@@ -69,15 +69,15 @@ header{
 }
 
 @media (min-width: 576px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-4-3.png');}
+    header{background-image:url('img/hh-03.jpg');}
 }
 
 @media (min-width: 768px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-16-9.png');}
+    header{background-image:url('img/hh-02.jpg');}
 }
 
 @media (min-width: 992px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-2.75-1.png');}
+    header{background-image:url('img/hh-01.jpg');}
 }
 
 
