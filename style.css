@@ -6,8 +6,8 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 
 :root {
   --primercolor: #EEF25E; 
-  --segundocolor: #183291; /* menos luminoso */
-  --tercercolor: #F8A0AE; /* más luminoso */
+  --segundocolor: #3C4099; /* menos luminoso */
+  --tercercolor: #F47186; /* más luminoso */
   --colorclaro: rgba(255,255,255,0.8);
   --coloroscuro: rgba(0,0,0,0.8);
 }
@@ -65,7 +65,7 @@ header{
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size:100% auto;
-    color:var(--colorclaro);
+    color:var(--segundocolor);
 }
 
 @media (min-width: 576px) { 
