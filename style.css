@@ -62,7 +62,7 @@ De tal manera podría "fundirse" con el color de fondo, ofreciendo continuidad, 
 header{
     background-color:var(--segundocolor);
     background-image:url('img/hh-04.jpg');
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size:100% auto;
     color:var(--colorclaro);
