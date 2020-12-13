@@ -198,18 +198,26 @@
             box.style.color = h + "px";
             // en caso quieran asomarse a la consola
 
- var fanzine;
+        var fanzine;
+        var sprite;
             // comenzamos con p5.js
+            function preload(){
+                fanzine = loadImage('img/canvas_fanzine3.png');
+            }
+                
+                
             function setup() {
                 var canvas = createCanvas(w, h);
                 canvas.parent("#p5");
-                fanzine = loadImage('img/canvas_fanzine3.png');
+                  sprite = createSprite(w, w);
+                    sprite.addImage(fanzine);
+                
             }
 
             function draw() {
                 background(200,200);
                 fill(0);
-                image(fanzine, 0, 0, w, w);
+                drawSprite(sprite);
                 
             }
 
