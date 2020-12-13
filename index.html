@@ -209,7 +209,7 @@
             function setup() {
                 var canvas = createCanvas(w, h);
                 canvas.parent("#p5");
-                  sprite = createSprite(w, w);
+                  sprite = createSprite(w, w); spr.scale = 0.5; spr.debug = true;
                     sprite.addImage(fanzine);
                 
             }
@@ -217,7 +217,7 @@
             function draw() {
                 background(200,200);
                 fill(0);
-                drawSprite(sprite);
+                drawSprite();
                 
             }
 
