@@ -45,6 +45,7 @@ a:hover{
 
 header, header div.container{
     height: 80vh;
+  padding-top: 20px;
    
 }
 
@@ -67,7 +68,7 @@ header{
     background-repeat: no-repeat;
     background-size:100% auto;
     color:var(--segundocolor);
-   padding-top: 20px;
+   
    
 }
 
