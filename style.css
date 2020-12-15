@@ -45,10 +45,12 @@ a:hover{
 
 header, header div.container{
     height: 80vh;
-
- 
    
 }
+
+div.container{
+  padding-top: 100px
+ } 
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
 
