@@ -45,7 +45,7 @@ a:hover{
 
 header, header div.container{
     height: 80vh;
- margin: 0 auto;
+
  
    
 }
@@ -69,7 +69,7 @@ header{
     background-repeat: no-repeat;
     background-size:100% auto;
     color:var(--segundocolor);
-   
+    margin: 0 auto;
   
     
    
