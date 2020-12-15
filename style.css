@@ -45,7 +45,7 @@ a:hover{
 
 header, header div.container{
     height: 80vh;
- bottom: 100px;
+ margin: 0 auto;
  
    
 }
