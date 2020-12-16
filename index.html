@@ -225,7 +225,7 @@
                 background('#1441a3');
                 fill(250);
 
-                if((-100<mouseY)&&(450>mouseY)) { 
+                if((-100<mouseY)&&(455>mouseY)) { 
                     image(img2, 0, 0, h, h);
                     
                 }
@@ -242,8 +242,8 @@
                 textAlign(LEFT);
                 
                 var middle = sourceText.length;
-                var left = middle - ((mouseX / 400) * middle);
-                var right = middle + ((mouseX / 400) * middle);
+                var left = middle - ((mouseY / 400) * middle);
+                var right = middle + ((mouseY / 400) * middle);
                   text(
                     sourceText.substring(left,right+1),
                     300, 210);
