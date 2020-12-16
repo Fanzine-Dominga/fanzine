@@ -201,28 +201,62 @@
             box.style.color = h + "px";
             // en caso quieran asomarse a la consola
 
-        var fanzine;
-        var sprite;
+            var fanzine;
+            var img;
+            var sourceText = "DESCARGABLE";
+            var sourceText2= "¡AYUDANOS A DIFUNDIR!";
+            var middle;
+    
+
             // comenzamos con p5.js
-            function preload(){
-                fanzine = loadImage('img/canvas_fanzine3.png');
-            }
-                
+               
                 
             function setup() {
                 var canvas = createCanvas(w, h);
-                canvas.parent("#p5");
-                  sprite = createSprite(w, w); spr.scale = 0.5; spr.debug = true;
-                    sprite.addImage(fanzine);
-                
+                canvas.parent("#p5");   
+
+                img = loadImage('img/fanzine001.png');
+                img2 = loadImage('img/fanzine003.png')
+                textFont('Teko', 100, 100);
+
             }
 
             function draw() {
-                background(200);
-                fill(0);
-                drawSprite();
+                background('#1441a3');
+                fill(250);
+
+                if((-100<mouseY)&&(450>mouseY)) { 
+                    image(img2, 0, 0, h, h);
+                    
+                }
                 
+                else {
+                image(img, 0, 0, h, h);
+                }
+              
+            
+                textSize(55);
+                text("FANZINE\n", 300, 170);
+                
+                textSize(40);
+                textAlign(LEFT);
+                
+                var middle = sourceText.length;
+                var left = middle - ((mouseX / 400) * middle);
+                var right = middle + ((mouseX / 400) * middle);
+                  text(
+                    sourceText.substring(left,right+1),
+                    300, 210);
+                
+                textSize(25);
+                    text (
+                        sourceText2.substring(left,right),
+                    300, 240);
+                
+
             }
+                
+            
 
             function windowResized() {
                 resizeCanvas(w, h);
